@@ -8,10 +8,29 @@
         <style>
             .box {
                 background-color: red;
+                font-size: 40px;
+            }
+            /* 이런 상태를 보기 위해 요소 검사 filter의 :hov를 클릭하여 확인해 보자. */
+            /* 커서가 박스 위로 올라갈 때 */
+            .box:hover {
+                background-color: pink;
+            }
+            /* 박스를 클릭할 때 */
+            .box:active {
+                background-color: green;
+            }
+            /* 텍스트에리아 박스를 포커스하면 배경이 파랑으로 바뀜. 호버시엔 핑크였으나, 클릭,포커스하면 파랑으로 바뀌고
+                더이상 핑크나 초록으로 바뀌지 않음.
+                focus가 위의 두 명령보다 더 중요하고 코드 맨 마지막에 작성되었기 때문. */
+            .box:focus {
+                background-color: blue;
             }
         </style>
     </head>
     <body>
-        <div class="box">lalalalala</div>
+        <span class="box">lalalalala</span>
+        <br /><br />
+        <!-- :focus 연습용으로 만든 textarea임. -->
+        <textarea class="box">blablablabla</textarea>
     </body>
 </html>
