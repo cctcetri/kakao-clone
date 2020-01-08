@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Flex</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+            .father {
+                /* '디스플레이: 플렉스'를 사용할 경우 차일드 박스에 '디스플레이: 인라인-블록'를 적용한 것 같은 효과를 줌. 
+                    but, 좀 다르다! */
+                /* 플렉스를 쓰면 더이상 블록이 아니게 됨. */
+                /* 부모 컨테이너에 플렉스로 선언하면, 그 안에 종속된 칠드런 박스들을 움직일 수 있음. */
+                display: flex;
+                /* justify-content는 수평으로 적용. 
+                    center의 경우 가운데 정렬, 
+                    space-between의 경우 컨텐츠가 같은 간격으로 적용,
+                    space-around의 경우 컨텐츠 뿐만 아니라 그 주변도 같은 간격으로 적용됨. */
+                justify-content: space-around;
+                /* align-items는 수직으로 적용. 
+                    flex-start의 경우 맨 위에서 시작
+                    flex-end의 경우 맨 아래에서 시작 */
+                align-items: flex-start;
+                /* 박스가 쌓여지는 위치를 어떻게 할지를 결정. column의 경우 위에서 밑으로(열로) 쌓이다가 옆으로 넘어가고
+                    row의 경우 옆으로(행으로) 쌓이다가 밑으로 넘어감. */
+                /* row가 기본 default값임. */
+                /* 만약 'flex-direction: column'일 경우 justify-content는 수직의 간격이 되고, align-items는 수평의 간격이 됨. */
+                flex-direction: row-reverse;
+                height: 100%;
+                /* flex-wrap, 이 속성도 부모 요소에 'display:flex;'' 와 함께 기재.
+                    ---  flex-wrap 속성 값들  ---
+                    nowrap : 부모 넓이에 맞게 요소들의 넓이를 강제 축소(기본 default값)
+                    wrap : 부모 넓이보다 차일드 요소들의 총 넓이가 크다면 나머지 요소들을 다음줄로 줄바꿈
+                    wrap-reverse : 줄바꿈 하는 요소들을 역순으로 배열
+                    initial : 기본값 (nowrap)
+                    inherit : 부모요소의 설정값을 사용 */
+                flex-wrap: wrap;
+            }
+            /* 박스 및 안쪽 숫자의 속성을 결정하기 위함 */
+            .box {
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                /* 칠드런 박스 안에서 플렉스 적용시 그 안의 element를 움직일 수 있음. */
+                display: flex;
+                /* flex-direction: row(default)인 상황에서,
+                    justify-content는 수평이므로 flex-start는 왼쪽 정렬, flex-end는 오른쪽 정렬임.
+                    align-items는 수직이므로 flex-start는 위쪽 정렬, flex-end는 아래쪽 정렬임. */
+                /* 만약 flex-direction: column이라면,
+                    justify-content는 수직이므로 flex-start는 위쪽 정렬, flex-end는 아래쪽 정렬임.
+                    align-items는 수평이므로 flex-start는 왼쪽 정렬, flex-end는 오른쪽 정렬임. */
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+        </div>
+    </body>
+</html>

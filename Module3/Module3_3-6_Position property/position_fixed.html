@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Position</title>
+        <style>
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                height: 400%;
+                background-color: red;
+            }
+            #boxOne {
+                height: 300px;
+                width: 300px;
+                background-color: yellow;
+                /* 디폴트로 모든 박스는 포지션이 static임. 이 뜻은 '그 element를 거기 놓으면 거기 있을 것이다.' 라는 뜻임. */
+                position: static;
+            }
+            #boxTwo {
+                height: 300px;
+                width: 100%;
+                background-color: green;
+                position: fixed;
+                bottom: 30%;
+                left: 500px;
+            }
+            /* CSS의 포지션이 기본 static이고 이는 화면 상의 그 위치에 박아 놓는 것이고
+                fixed의 경우 웹 화면의 스크롤을 움직여도 항상 동일한 자리에 위치하도록 강제하는 것이고
+                absolute의 경우 fixed와 비슷한데 스크롤 한다고 보이지 않음. */
+        </style>
+    </head>
+    <body>
+        <div id="boxOne">
+            <div class="box-child"></div>
+        </div>
+        <div id="boxTwo">
+            <div class="box-child"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Position</title>
+        <style>
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                height: 400%;
+                background-color: red;
+            }
+            .abs-box {
+                height: 400px;
+                width: 400px;
+                background-color: yellow;
+                /* 이 밑의 포지션: relative를 썼기 때문에 child 박스가 이 부모 박스와 연관이 생겨 부모 박스의 포지션에 
+                    상대적으로 움직이게 된 것임. */
+                /* 만약 이 부모 박스가 없다면 chile 박스는 본문 body에 맞춰서 상대적으로 위치를 설정할 것임. */
+                position: relative;
+            }
+            .abs-child {
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                /* 아래 처럼 포지션을 absolute로 right을 0으로 주면 화면 오른쪽 끝에 붙게 되는데
+                    이 말은 부모에 해당하는 박스를 찾지 못했기 때문임. */
+                /* 포지션: 앱솔루트가 설정되면 html 상에서 해당 element와 관계가 있는 element(relative-부모박스)를
+                    살펴보고 이에 상응해서 포지션이 결정되는 것임. 그런데 이 경우에는 부모 박스가 상응하는 관계가 없어서
+                    그냥 우리가 설정한 값대로 움직이는 것임. */
+                /* 즉, absolute 포지션은 relative 포지션과 같이 사용할 경우 relative에 상대적으로 위치할 것이고
+                    그냥 absolute 포지션만 사용할 경우 본문에 상대적으로 위치할 것임. */
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+    </body>
+</html>

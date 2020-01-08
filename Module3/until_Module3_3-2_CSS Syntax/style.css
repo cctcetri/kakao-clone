@@ -1,0 +1,39 @@
+/* 이런식으로 함수화 시켜 사용할 수도 있고, 다양한 selector가 존재한다는 것을 보여줌.
+물론 사용할 때 id는 '#id명', class는 '.class명', tag는 '태그명'으로 작성해야 함 */
+/* selector (id, class, tag name) {
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+} */
+
+/* 생각할 수 있는 모든 태그 이름이 selector로 가능 
+'태그명 {}'
+까지가 selector */
+/* 여러가지 속성 값을 줄 수도 있음 */
+h1 {
+    property-name: value;
+    property-name: value;
+    property-name: value;
+}
+
+/* element의 id는 
+'#아이디명 {}'
+으로 selector 사용 */
+#headerNumberOne {
+    property-name: value;
+}
+
+/* element의 class는 
+'.클래스명 {}'
+으로 selector 사용 */
+.defaultHeader {
+    property-name: value;
+}
+
+/* 태그와 class 이런식으로 섞을 수도 있음 */
+h6 .defaultHeader {
+    property-name: value;
+}

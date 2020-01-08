@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Selectors and Pseudo Selectors</title>
+        <style>
+            .container > .box {
+                background-color: green;
+            }
+
+            /* input[type='submit'] == .submit클래스명 */
+            /* input[required='req'] == password및 submit의 클래스명과 같음(required이므로!) */
+            /* input[required='req'] {
+                background-color: blue;
+            }
+            input {
+                border: 3px solid red;
+            } */
+            /* 'input + .box {}'도 가능한데 이는 둘이 형제라는 의미임. */
+            /* 'input > .box {}'도 가능한데 이는 direct child 즉, 직계라는 뜻으로 그 밑에 다른 박스들이 있다면
+                그 박스들은 해당되지 않는다는 뜻. */
+            .box {
+                background-color: gold;
+                display: block;
+                height: 100px;
+                border: 1px solid black;
+            }
+            /* 이 아래 코드들을 하는 이유는 태그명이나 id, class를 쓰지 않고 선택하는 방법이 있다는 것을 보여주기 위함.
+                이게 바로 pseudo-selector(가상 셀렉터)라는 것임. */
+            /* 모든 박스 중에서 가장 마지막 박스를 선택하는 것 */
+            /* .box:last-child {
+                background-color: pink;
+            } */
+            /* 박스 중에서 (n)번째 박스를 선택함. */
+            /* .box:nth-child(1) {
+                background-color: saddlebrown;
+            } */
+            /* 박스 중에서 (2n)번째 즉, 2의 배수번째 박스들을 선택함. */
+            /* 마찬가지로 (2n+1)등 여러 수식이 사용가능함. */
+            /* .box:nth-child(2n) {
+                background-color: seagreen;
+            } */
+            .child {
+                background-color: purple;
+                width: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="box child"></div>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box">
+                <input type="password" required="req" />
+                <input type="submit" required="req" />
+            </div>
+        </div>
+    </body>
+</html>
