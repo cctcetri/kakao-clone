@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Animations</title>
+        <!-- 호버 등의 state 변화할 때 말고도 일반적으로 계속 변화하게 하고 싶다면 Animations사용! -->
+        <style>
+            body {
+                /* div태그안 요소 가운데 정렬을 위해 부모 태그에 display: table; 라고 선언 */
+                display: table;
+            }
+            .box {
+                width: 500px;
+                height: 500px;
+                background-color: red;
+                color: blue;
+                font-size: 300px;
+                /* div태그안 요소 가운데 정렬을 위해 자식 태그에 
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                라고 선언  */
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                /* animation: 몇초동안 동작 / 애니메이션 이름 적고 / (무한 반복 시키고 싶을 경우 infinite) / 효과 적고; */
+                animation: 5s ScaleAndRotateSquare infinite ease-in-out;
+            }
+            /* 키프레임은 css로 하여금 작성자가 애니메이션을 생성했다는 것을 알려줌. */
+            /* @keyframes identifier{}에서 identifier 대신에 애니메이션의 이름을 적으면 됨. */
+            @keyframes ScaleAndRotateSquare {
+                /* 2가지 스텝이 필요. (1)from (2)to */
+                /* from {
+                    transform: none;
+                }
+                to {
+                    transform: rotate(5turn) scale(0.5, 0.5);
+                } */
+                /* 만약 2가지 스텝 말고 여러 스텝으로 변화를 주고 싶다면, from~to 대신에
+                0%(none)-50%(rotate)-100%(none)을 줄수도 있음. */
+                0% {
+                    transform: none;
+                }
+                50% {
+                    transform: rotate(1turn) scale(0.5, 0.5);
+                    color: white;
+                    font-size: 100px;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                100% {
+                    transform: none;
+                }
+            }
+            /* 참고) div안의 글자를, CSS - div를 가운데 정렬 (가로, 세로, 중앙 정렬) 하는 방법 5가지 (position, line-height 등등)
+            링크 : https://m.blog.naver.com/skydoor2014/220562850945 */
+        </style>
+    </head>
+    <body>
+        <div class="box">11</div>
+    </body>
+</html>

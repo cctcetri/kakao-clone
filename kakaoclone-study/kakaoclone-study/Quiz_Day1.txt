@@ -1,0 +1,119 @@
+오늘의 강의: 이론 [Module #1] "The tools of a Web Developer" 전체 강의
+오늘의 과제: 위의 강의를 시청하신 후, 아래 퀴즈를 풀면 됩니다.  
+제출기간: 익일 오전 6시까지
+퀴즈는 단 1회만 응할 수 있습니다.
+퀴즈 채점 결과는 일괄 익일 오후 이메일로 알려드립니다.
+퀴즈 사용방법 (클릭)을 참고하세요!
+아. 참고로 슬랙채널에는 다들 입장하셨죠? 가입하셔서 수강생분들과 서로 으쌰으쌰!하면서 완주하시면 됩니다.
+매일 안전하게 이메일을 받으실 수 있도록 주소록에 lynn@nomadcoders.co 을 추가해주세요.
+
+==========================================================================================================================================================
+
+1.Do you need Visual Studio Code to make websites? *
+10점
+Yes, it's where I write the code.
+No, it does not matter because code is just text.
+
+2.What is Git? *
+10점
+Git is a version control system.
+Git is the same as Github.
+Git is a system to make automatic backups.
+
+3.What does 'Local Version Control' mean *
+10점
+It means that everybody can see our local files.
+It means that we have all the history of our files saved in our computer.
+It means that we installed Git in our machine.
+
+4.What is 'Remote Version Control'? *
+10점
+Is when my files are in someone else's computer.
+Is when I share my file history with my friends.
+Is when the file history is also uploaded to another Git Server.
+
+5.What is a repository? *
+10점
+It's a folder with my files on it
+It's a folder with my files on it being watched by Git
+It's a file watched by Git
+
+6.What is a commit? *
+10점
+A record on the Git history signaling a change on the code.
+An automatic backup that happens when we add a file.
+A comment we have to write every time we save a file.
+
+7.What is a branch in Git? *
+10점
+A wooden stick where we put the commits
+A different repository
+Is a copy of the code from the master branch
+
+8.Why should we use branches? *
+10점
+Because it is the only way to share code between coworkers
+Because we can work on other things without breaking the stable code
+Because we need to commit the code
+
+9.Git is the same as Github *
+10점
+True
+False
+
+10.What is the difference between Git and Github *
+10점
+There is no difference
+Git is where we put our files, Github is where we share them
+Git is the version control system and Github is a remote version control website
+
+11.What is Github Desktop (GD)? *
+10점
+GD is the only way to work with Git
+GD is a Git client to work with Git + Github Visualy
+GD is a version control system
+
+12.HTML is a programming language *
+10점
+True
+False
+
+13.CSS is a programming language *
+10점
+True
+False
+
+14.What is HTML for? *
+10점
+HTML tells the browser how the elements look.
+HTML tells the user how the elements look.
+HTML tells the browser what the elements are.
+
+15.What is CSS for? *
+10점
+CSS tells the browser what the elements are.
+CSS tells the browser how the elements look.
+CSS tells the browser how the elements behave.
+
+16.Can I change the color of the elements using HTML? *
+10점
+Yes
+No
+
+17.Can I create a link using CSS? *
+10점
+Yes
+No
+
+18.What is HTML? *
+10점
+A markup language.
+A style language.
+A programming language.
+
+19.What is CSS? *
+10점
+A markup language.
+A styling language.
+A programming language.
+

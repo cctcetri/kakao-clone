@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Transformations</title>
+        <!-- 트랜스포메이션은 html문서의 element들을 변경, 모습이 변하는 효과를 뜻함. -->
+        <style>
+            .box {
+                width: 500px;
+                height: 500px;
+                background-color: red;
+                transition: transform 0.5s ease-in-out;
+            }
+            .box:hover {
+                transform: rotate(5turn) scale(0.5, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
+<!-- 다양한 트랜스포메이션 관련 링크 : https://developer.mozilla.org/en-US/docs/Web/CSS/transform -->

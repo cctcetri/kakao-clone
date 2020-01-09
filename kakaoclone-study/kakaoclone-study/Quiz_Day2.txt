@@ -1,0 +1,131 @@
+1.What is an HTML document made of? *
+10점
+Divs
+Tags
+Sections
+
+2.What is the page where servers go to by default? *
+10점
+home.html
+main.html
+index.html
+
+3.Is: <human gender:"male"> valid HTML? *
+10점
+Yes
+No
+
+4.What is the tag for a paragraph? *
+10점
+<par></par>
+<p></p>
+<a></a>
+
+5.What is the tag for a link? *
+10점
+<link></link>
+<p></p>
+<a></a>
+
+6.What does the 'target' attribute on <a> do? *
+10점
+It controls how fast the page loads
+It controls where the new page will open
+It does nothing
+
+7.What does <!DOCTYPE html> do? *
+10점
+It tells the browser that the document is an html file
+It tells the browser that the document contains html tags
+It tells the browser that the document understands html
+
+8.Which tag is invisible *
+10점
+<body>
+<head>
+<header>
+All
+None
+
+9.What is the <head> for? *
+10점
+Give information to the user about the website
+Give information to the browser about the website
+
+10.What is the <title> for? *
+10점
+To display the title of the page on the body
+To change of the tab on the browser
+<title> does not exist
+
+11.Where should I put my <h1>? *
+10점
+Inside the <body>
+Between <head> and <body>
+Inside <head>
+
+12.What is the smallest header tag? *
+10점
+<h9>
+<h6>
+<h10>
+
+13.What is a meta tag? *
+10점
+Information that I want the user to see
+Information that I want the browser to see
+A tag representing content
+
+14.Can I create my own meta tag? *
+10점
+Yes, meta tags are just information so I can put whatever I want
+No, there are only some meta tags and other ones will not be understood
+
+15.What is a semantic tag? *
+10점
+A tag that loves to be semantic
+A tag that does not mean anything
+A tag that means something when I read it
+
+16.<h1> is a non-semantic tag *
+10점
+True
+False
+
+17.<div> is a semantic tag *
+10점
+True
+False
+
+18.<header> is a semantic tag *
+10점
+True
+False
+
+19.What is the container for short text? *
+10점
+<text></text>
+<span></span>
+<p></p>
+
+20.How many ID's can an element have? *
+10점
+Minimum two
+Maximum one
+As many as I want
+
+21.Should ID's be unique? *
+10점
+Yes
+No
+
+22.How many CLASS can an element have? *
+10점
+No more than 10
+More than one but less than five
+As many as I want
+
+23.Should CLASSes be unique? *
+10점
+No, they are meant to be repeated
+Yes, they are just like IDs

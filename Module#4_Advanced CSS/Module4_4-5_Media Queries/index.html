@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Media Queries</title>
+        <style>
+            body {
+                background-color: green;
+            }
+            /* 미디어 스크린 규칙을 줘서 그 쿼리 안에 작성한대로 실행됨.
+            pc화면 말고 모바일 화면 같은 더 작은 화면에선 어떤 식으로 보여줄지 설정할 수 있게됨.
+            아래 예제는 최소폭 320픽셀 ~ 최대폭 640픽셀에서 배경색을 파랑색으로 변하도록 작성함. */
+            @media screen and (min-width: 320px) and (max-width: 640px) {
+                body {
+                    background-color: blue;
+                }
+            }
+            /* 미디어 쿼리 링크: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+        </style>
+    </head>
+    <body></body>
+</html>

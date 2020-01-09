@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            .box {
+                background-color: green;
+                color: white;
+                font-size: 100px;
+                font-weight: bold;
+                /* 트랜지션은 어떤 state가 바뀔때 적용이 되는 것!
+                state = hover, active, focus, visited 등이 있음!(이중 visited를 뺀 나머지에서 효과적으로 적용됨.) */
+                /* '트랜지션: 무엇을(all이면 state 안의 속성들(property) 전부라는 의미) 몇초에 어떤방식' 으로 바꿀지 */
+                /* transitions: property Xs ease-in-out; 이런식으로 작성! 자세히 알고 싶으면 밑에 링크 참조!*/
+                transition: all 0.5s ease-in-out;
+            }
+            .box:active {
+                background-color: red;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="box">
+            Text
+        </span>
+    </body>
+</html>
+<!-- 트랜지션에 관한 좀 더 자세한 내용 링크 : 
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+2. https://easings.net/en -->
+
+<!-- /* Apply to 1 property */
+/* property name | duration */
+transition: margin-right 4s;
+
+/* property name | duration | delay */
+transition: margin-right 4s 1s;
+
+/* property name | duration | timing function */
+transition: margin-right 4s ease-in-out;
+
+/* property name | duration | timing function | delay */
+transition: margin-right 4s ease-in-out 1s;
+
+/* Apply to 2 properties */
+transition: margin-right 4s, color 1s;
+
+/* Apply to all changed properties */
+transition: all 0.5s ease-out;
+
+/* Global values */
+transition: inherit;
+transition: initial;
+transition: unset; -->

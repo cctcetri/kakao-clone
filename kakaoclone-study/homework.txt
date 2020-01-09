@@ -1,0 +1,7 @@
+😈 Homework:
+
+Learn about BEM so that you can get ready for Kakao-clone Practice! Read and check out all the links below ;)
+
+http://getbem.com/introduction/
+https://en.bem.info/methodology/key-concepts/
+https://en.bem.info/methodology/quick-start/
