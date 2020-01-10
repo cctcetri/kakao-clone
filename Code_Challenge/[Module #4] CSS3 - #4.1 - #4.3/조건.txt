@@ -1,0 +1,28 @@
+Quiz
+This quiz is based on the second section named: "[Module #4] Advanced CSS" 
+
+From Videos #4.1 to #4.3
+
+오늘의 강의: 이론 "[[Module #4] Advanced CSS - #4.1 ~ #4.3" 입니다.
+오늘의 과제: 위의 강의들을 시청하신 후, 아래 퀴즈와 코드 챌린지를 제출하면 됩니다.
+제출기간: 익일 오전 6시까지
+
+Code Challenge
+Based on what you learnt on the videos #4.1 to #4.3.
+
+These are the elements you will have to make:
+
+코드 챌린지 입니다.
+아래 모습과 같은 스크린을 똑같이 구현하세요.
+
+
+The left column is the element on the normal state and the right is the element when the mouse is on top of it.
+
+
+
+필요조건:
+There has to be an animation between the two states.
+The button should have round borders and shadows
+
+힌트:
+You will need to use new properties like ‘box-shadow’ and ‘border-radius’

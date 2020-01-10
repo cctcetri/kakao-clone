@@ -1,0 +1,74 @@
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  /* <body> 안의 .container의 위치 결정을 위한 코드 3줄  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: solid white;
+  /* .container 안의 elements의 위치 결정을 위한 코드 4줄 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/* button과 image를 서로 띄우기 위해 작성하였는데 문제는 밑에 이미지가 돌아갈 때
+margin을 지키기 위해 button이 위로 살짝 들어올려진다....... 어떻게 해야할까...? */
+.container > div:nth-child(1),
+.container > img:nth-child(2) {
+  margin: 30px;
+}
+
+/* .container 안에 여러 div가 존재할 것을 대비하여 가상 클래스 선택자 연습 */
+.container > div:nth-child(1) {
+  background-color: gray;
+  width: 400px;
+  height: 100px;
+  border-radius: 100px;
+  /* transition 연습 */
+  transition: box-shadow 1s ease-in-out, opacity 1s ease-in-out;
+
+  /* 'I'm a button' 글자를 위한 코드 5줄  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+}
+
+/* hover시 transition될 property 작성  */
+.container > div:nth-child(1):hover {
+  box-shadow: 3px 3px 5px 3px rgb(46, 45, 45);
+  opacity: 0.7;
+}
+
+/* .container 안에 여러 img가 존재할 것을 대비하여 가상 클래스 선택자 연습 */
+.container > img:nth-child(2) {
+  width: 300px;
+  height: 300px;
+}
+
+/* hover시 animation 동작하도록 연습  */
+/* 변환 후 transition이 아니어서 고정 되지 않고 원래 상태로 돌아오기에 infinite 작성 */
+.container > img:nth-child(2):hover {
+  animation: 1.5s scaleAndRotateBorderSquare infinite ease-in-out;
+}
+
+/* animation을 동작시키기 위한 @keyframes 함수 설정 */
+@keyframes scaleAndRotateBorderSquare {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(135deg) scale(0.6, 0.6);
+    border: 5px solid black;
+  }
+}
