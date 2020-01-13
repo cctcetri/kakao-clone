@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comment Page | Kakao_Clone-Instagram</title>
+    <meta charset="UTF-8" />
+    <!-- 이 아래 스크립트 태그는 fontawesome.com 이라는 곳에서 무료 폰트를 쓸 수 있도록 하기 위함 -->
+    <script
+      src="https://kit.fontawesome.com/ec345c50b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <header class="story__header">
+      <div class="story__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="story__header-column">
+        <ul class="header-column__selected">
+          <li class="header-column__selected-column">
+            <div class="selected-column__header-avatar">
+              <img src="images/0.5_images/avatar6.png" />
+            </div>
+            <div class="selected-column__header-content">
+              <h3 class="story__friend__name">Sam Martin</h3>
+              <span class="story__register__time">5 min</span>
+            </div>
+          </li>
+          <li class="header-column__selected-column">
+            <i class="fas fa-ellipsis-h"></i>
+          </li>
+        </ul>
+      </div>
+      <span class="story__image">
+        <a href="comment.html">
+          <img src="images/nomad_coder.png" alt="wait!" />
+        </a>
+      </span>
+      <ul class="story__footer">
+        <li class="story__footer-column">
+          <div class="story__footer-likey">
+            <span class="likey__icon">
+              <i class="far fa-heart"></i>
+            </span>
+            <span class="likey__count">2,515</span>
+          </div>
+          <a href="comment.html">
+            <div class="story__footer-comments">
+              <span class="comments__icon">
+                <i class="far fa-comment-alt"></i>
+              </span>
+              <span class="comments__count">350</span>
+            </div>
+          </a>
+        </li>
+        <li class="story__footer-column">
+          <i class="far fa-bookmark"></i>
+        </li>
+      </ul>
+    </header>
+    <br /><br />
+    <main class="comments">
+      <ul class="comments__list">
+        <li class="list__comment comment">
+          <div class="list__comment-column">
+            <img
+              src="images/0.5_images/avatar2.png"
+              class="comment__friend__avatar"
+            />
+            <div class="comment__friend__content">
+              <h4 class="friend__name">Angel</h4>
+              <span class="friend__comment">
+                Looks so good that I can't control my self over this.
+              </span>
+              <span class="friend__status">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-reply"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="list__comment comment">
+          <div class="list__comment-column">
+            <img
+              src="images/0.5_images/avatar3.png"
+              class="comment__friend__avatar"
+            />
+            <div class="comment__friend__content">
+              <h4 class="friend__name">Charlie</h4>
+              <span class="friend__comment">
+                Waiting more from you.
+              </span>
+              <span class="friend__status">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-reply"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="list__comment comment">
+          <div class="list__comment-column">
+            <img
+              src="images/0.5_images/avatar4.png"
+              class="comment__friend__avatar"
+            />
+            <div class="comment__friend__content">
+              <h4 class="friend__name">Angelina Martin</h4>
+              <span class="friend__comment">
+                New collection is great!!!
+              </span>
+              <span class="friend__status">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-reply"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="comment__write--container">
+      <div class="write--container__writer-box">
+        <div class="writer-box__avatar">
+          <img src="/images/0.5_images/avatar1.png" />
+        </div>
+        <input
+          type="text"
+          class="writer-box__comment-typing"
+          placeholder="Add a comment"
+        />
+        <div class="writer-box__comment-add">
+          <i class="far fa-paper-plane"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

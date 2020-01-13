@@ -1,0 +1,10 @@
+Based on what you learnt on the practice videos #1.1 to #1.9
+
+Make the HTML of the following screens:
+
+
+
+오늘의 강의: 실전 #1.1 ~ #1.9 
+오늘의 과제: 위의 강의들을 시청하신 후, 아래 코드 챌린지를 제출하면 됩니다.
+제출기간: 익일 오전 6시까지
+코드 챌린지: 아래 스크린과 같은 HTML 을 작성하세요. (HTML ONLY!)
