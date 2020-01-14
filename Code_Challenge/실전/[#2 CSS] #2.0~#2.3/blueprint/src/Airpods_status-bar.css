@@ -1,0 +1,19 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.status-bar .fa-dollar-sign {
+  font-size: 24px;
+  font-weight: 600;
+  color: #29292e;
+}
+
+.status-bar .fa-star:nth-child(-n + 4) {
+  color: #febe50;
+}
+
+.status-bar .pages {
+  margin-left: 10px;
+}

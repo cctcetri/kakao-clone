@@ -1,0 +1,11 @@
+.products .productName {
+  font-size: 24px;
+  font-weight: 600;
+  color: #29292e;
+  margin-bottom: 20px;
+}
+
+.products .productPreview {
+  font-size: 20px;
+  line-height: 25px;
+}

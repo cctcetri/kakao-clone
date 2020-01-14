@@ -1,0 +1,19 @@
+Based on what you learnt on the practice videos #2.0 to #2.3.
+
+You need to reproduce the following two components with CSS
+
+
+
+오늘의 강의: 실전 #2.0 ~ #2.3 
+오늘의 과제: 위의 강의들을 시청하신 후, 아래 코드 챌린지를 제출하면 됩니다.
+제출기간: 익일 오전 6시까지
+코드 챌린지: 아래 스크린과 같은 CSS 를 작성하세요.
+
+
+
+
+
+수행조건:
+Use flex box
+Use Google Fonts
+Use Font Awesome
