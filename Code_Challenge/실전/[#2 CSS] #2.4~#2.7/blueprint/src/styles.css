@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.Sign .input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 36px;
+  border: 2px solid #f3f3f3;
+  border-radius: 10%;
+  padding-left: 10px;
+}
+
+.Sign .input::placeholder {
+  opacity: 0.6;
+}
+
+.Sign .id {
+  margin-bottom: 20px;
+}
+
+.Sign .pw {
+  margin-bottom: 15px;
+}
+
+.Sign .emphasis {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f0abb3;
+}
+
+.personal-information__emphasis {
+  display: block;
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 10%;
+}
+
+.Sign .fa-check-square {
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.Sign .emphasis-not {
+  opacity: 0.3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.Sign .buttons__column:nth-child(odd) {
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.Sign .buttons__column:first-child {
+  width: 80%;
+  height: 36px;
+  border: 1px solid #f8f8f8;
+  border-radius: 30px;
+  background-color: #e2283e;
+}
+
+.buttons .buttons__column:first-child {
+  display: block;
+  margin: 0px auto;
+}
+
+.buttons .buttons__intermediate-text {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.buttons .buttons__column:last-child .buttons__button:first-child {
+  width: 30%;
+  height: 36px;
+  border: 1px solid #f8f8f8;
+  border-radius: 30px;
+  background-color: #475a95;
+}
+
+.buttons .buttons__column:last-child .buttons__button:last-child {
+  width: 30%;
+  height: 36px;
+  border: 1px solid #f8f8f8;
+  border-radius: 30px;
+  background-color: #5da1f2;
+}
+
+.buttons .buttons__column:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Sign .footer {
+  margin-left: 10%;
+}
+
+.Sign .footer .footer__column:first-child {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.Sign .footer .footer__column:last-child {
+  margin-bottom: 70px;
+}
